@@ -37,7 +37,7 @@
               </span>
               <div>
                 <a class="btn btn-warning btn-sm font-weight-normal" href="/restaurants/{{ this._id }}/edit">Edit</a>
-                <form action="/restaurants/{{ this._id }}/delete" method="POST" style="display: inline;">
+                <form action="/restaurants/{{ this._id }}?_method=DELETE" method="POST" style="display: inline;">
                   <button type="submit" class="btn btn-outline-dark btn-sm font-weight-normal">Delete</button>
                 </form>
               </div>
