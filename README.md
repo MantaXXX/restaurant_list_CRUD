@@ -17,7 +17,11 @@ A restaurant webpage made from Node.js, Handlebars, Express displays different r
 
 * Click '我的餐廳清單' to back to homepage.
 
+* Click '▾' to sort the list by name, rating or category
+
 * Type in keyword to search restaurant.
+
+
 
 
 

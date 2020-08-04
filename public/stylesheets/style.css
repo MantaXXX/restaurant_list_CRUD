@@ -97,30 +97,3 @@ header {
     height: auto;
   }  
 }
-
-
-::placeholder { /* CSS 3 標準 */
-
-  color: white;
-
-}
-
-::-webkit-input-placeholder { /* Chrome, Safari */
-
-  color: white;
-
-}
-
-:-ms-input-placeholder { /* IE 10+ */
-
-  color: white;
-
-}
-
-::-moz-placeholder { /* Firefox 19+ */
-
-  color: white;
-
-  opacity: 1;
-
-}
