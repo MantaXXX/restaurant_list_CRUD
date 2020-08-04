@@ -1,9 +1,9 @@
 <h1 class="restaurant-show-title">{{ restaurant.name }}</h1>
 <div style="display: inline" class="d-flex justify-content-end pl-5">
-  <a href="/restaurants/{{ restaurant._id }}/edit"><button type="button"
+  <a href="/restaurant/{{ restaurant._id }}/edit"><button type="button"
       class="btn btn-warning btn-sm font-weight-normal">Edit</button></a>
   <a href="/"><button class="mx-1 btn btn-warning btn-sm font-weight-normal">Back</button></a>
-  <form action="/restaurants/{{ restaurant._id }}?_method=DELETE" method="POST">
+  <form action="/restaurant/{{ restaurant._id }}?_method=DELETE" method="POST">
     <button type="submit" class="mr-5 btn btn-outline-dark btn-sm font-weight-normal">Delete</button>
   </form>
 
