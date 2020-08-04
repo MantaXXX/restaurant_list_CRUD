@@ -3,38 +3,39 @@
     <div class="row">
       <div class="col-12 col-md-10 mx-auto">
 
-        <p class="mt-2 mb-2">
-          <span class="text-secondary">
-            餐廳名稱：
-          </span>
-          <input type="text" class="rounded" placeholder="name" name="name" value="{{ restaurant.name }}"></input>
+        <p class="mt-2 mb-2"></p>
+        <span class="text-secondary">
+          餐廳名稱：
+        </span>
+        <input type="text" class="rounded" placeholder="name" name="name" value="{{ restaurant.name }}"
+          required></input>
         </p>
 
-        <p class="mb-2">
-          <span class="text-secondary">
-            餐廳類別：
-          </span>
-          <input type="text" class="rounded" placeholder="Ex.西式料理" name="category" list="category"
-            value="{{ restaurant.category }}">
-          <datalist id="category">
-            <option value="西式料理">西式料理</option>
-            <option value="日本料理">日本料理</option>
-            <option value="義式餐廳">義式餐廳</option>
-            <option value="中式餐廳">中式餐廳</option>
-            <option value="泰式料理">泰式料理</option>
-            <option value="中東料理">中東料理</option>
-            <option value="美式">美式</option>
-            <option value="酒吧">酒吧</option>
-            <option value="咖啡">咖啡</option>
-            <option value="其他">其他</option>
-          </datalist>
+        <p class="mb-2"></p>
+        <span class="text-secondary">
+          餐廳類別：
+        </span>
+        <input type="text" class="rounded" placeholder="Ex.西式料理" name="category" list="category"
+          value="{{ restaurant.category }}" required>
+        <datalist id="category">
+          <option value="西式料理">西式料理</option>
+          <option value="日本料理">日本料理</option>
+          <option value="義式餐廳">義式餐廳</option>
+          <option value="中式餐廳">中式餐廳</option>
+          <option value="泰式料理">泰式料理</option>
+          <option value="中東料理">中東料理</option>
+          <option value="美式">美式</option>
+          <option value="酒吧">酒吧</option>
+          <option value="咖啡">咖啡</option>
+          <option value="其他">其他</option>
+        </datalist>
         </p>
 
         <p class="mb-2">
           <span class="text-secondary">
             餐廳地址：
           </span>
-          <input type="text" name="location" value="{{ restaurant.location }}" class="rounded">
+          <input type="text" name="location" value="{{ restaurant.location }}" class="rounded" required>
           <span class="text-secondary ml-1">
             Google maps：
           </span>
@@ -52,7 +53,7 @@
           <span class="text-secondary">
             餐廳評價：
           </span>
-          <input type="text" value="{{ restaurant.rating }}" name="rating" class="rounded">
+          <input type="number" step="0.1" value="{{ restaurant.rating }}" name="rating" class="rounded" required>
         </p>
 
         <p class="mb-2">
