@@ -6,12 +6,12 @@
 
         <p class="mt-2 mb-2">
           <span class="text-secondary">餐廳名稱：</span>
-          <input type="text" class="rounded" placeholder="name" name="name"></input>
+          <input type="text" class="rounded" placeholder="name" name="name" required></input>
         </p>
 
         <p class="mb-2">
           <span class="text-secondary">餐廳類別：</span>
-          <input type="text" class="rounded" placeholder="Ex.西式料理" name="category" list="category">
+          <input type="text" class="rounded" placeholder="Ex.西式料理" name="category" list="category" required>
           <datalist id="category">
             <option value="西式料理">西式料理</option>
             <option value="日本料理">日本料理</option>
@@ -28,7 +28,7 @@
 
         <p class="mb-2">
           <span class="text-secondary">餐廳地址：</span>
-          <input type="text" name="location" class="rounded" placeholder="Address">
+          <input type="text" name="location" class="rounded" placeholder="Address" required>
           <span class="text-secondary ml-1">Google maps：</span>
           <input type="text" name="google_map" class="rounded" placeholder="http://...">
         </p>
@@ -40,7 +40,7 @@
 
         <p class="mb-2">
           <span class="text-secondary">餐廳評價：</span>
-          <input type="text" name="rating" class="rounded" placeholder="rating">
+          <input type="text" name="rating" class="rounded" placeholder="rating" required>
         </p>
 
         <p class="mb-2">
