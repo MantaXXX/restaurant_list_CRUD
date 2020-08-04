@@ -9,14 +9,8 @@ router.get('/new', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-  const name = req.body.name
-  const category = req.body.category
-  const location = req.body.location
-  const google_map = req.body.google_map
-  const phone = req.body.phone
-  const rating = req.body.rating
-  const description = req.body.description
-  const image = req.body.image
+  const { name, category, location, google_map, phone, rating, description, image } = req.body
+
   return Restaurant.create({
     name,
     category,
@@ -51,14 +45,7 @@ router.get('/:id/edit', (req, res) => {
 
 router.put('/:id', (req, res) => {
   const id = req.params.id
-  const name = req.body.name
-  const category = req.body.category
-  const location = req.body.location
-  const google_map = req.body.google_map
-  const phone = req.body.phone
-  const rating = req.body.rating
-  const description = req.body.description
-  const image = req.body.image
+  const { name, category, location, google_map, phone, rating, description, image } = req.body
   return Restaurant.findById(id)
     .then(restaurant => {
       restaurant.name = name
