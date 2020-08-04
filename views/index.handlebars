@@ -10,11 +10,24 @@
           <div class="input-group-append">
             <button class="btn btn-major" type="submit" id="search-button"><i class="fas fa-search"></i></button>
           </div>
+          <div class="d-flex justify-content-end align-items-center ml-3" style="width: 20%">
+            <button type="button" class="btn btn-outline-secondary dropdown-toggle" style="width: 80%"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{ filter }}
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="/sort/name/asc/A - Z">A - Z</a>
+              <a class="dropdown-item" href="/sort/name/desc/Z - A">Z - A</a>
+              <a class="dropdown-item" href="/sort/category/asc/類別">類別</a>
+              <a class="dropdown-item" href="/sort/rating/desc/評分">評分</a>
+            </div>
+          </div>
         </div>
       </form>
     </div>
   </div>
 </div>
+
 
 <!-- restaurant list -->
 <div class="container mt-5">
