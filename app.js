@@ -8,7 +8,7 @@ require('./config/mongoose')
 
 const app = express()
 
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
+app.engine('handlebars', exphbs({ defaultLayouts: 'main' }))
 app.set('view engine', 'handlebars')
 
 app.use(express.static('public'))
