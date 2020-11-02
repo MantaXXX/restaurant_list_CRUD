@@ -78,6 +78,22 @@ header {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.restaurant-spec-list {
+  margin-bottom: 2%;
+}
+
+.restaurant-spec-list input {
+  border-radius: 5px;
+}
+
+.restaurant-spec-desc textarea {
+  width: 100%;
+}
+
+.restaurant-spec-maps input {
+  width: 144px;
+}
+
 @media screen and (max-width: 992px) {
   
   .card img{
