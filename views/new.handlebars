@@ -4,14 +4,14 @@
       <h2 class="text-secondary my-4">建立新餐廳</h2>
       <form action="/restaurant" method="POST">
 
-        <p class="mt-2 mb-2">
+        <p class="mt-2 restaurant-spec-list">
           <span class="text-secondary">餐廳名稱：</span>
-          <input type="text" class="rounded" placeholder="name" name="name" required></input>
+          <input type="text" placeholder="name" name="name" required></input>
         </p>
 
-        <p class="mb-2">
+        <p class="restaurant-spec-list">
           <span class="text-secondary">餐廳類別：</span>
-          <input type="text" class="rounded" placeholder="Ex.西式料理" name="category" list="category" required>
+          <input type="text" placeholder="Ex.西式料理" name="category" list="category" required>
           <datalist id="category">
             <option value="西式料理">西式料理</option>
             <option value="日本料理">日本料理</option>
@@ -26,35 +26,37 @@
           </datalist>
         </p>
 
-        <p class="mb-2">
+        <p class="restaurant-spec-list">
           <span class="text-secondary">餐廳地址：</span>
-          <input type="text" name="location" class="rounded" placeholder="Address" required>
-          <span class="text-secondary ml-1">Google maps：</span>
+          <input type="text" name="location" placeholder="Address" required>
+        </p>
+
+        <p class="restaurant-spec-list restaurant-spec-maps">
+          <span class="text-secondary">Google maps：</span>
           <input type="text" name="google_map" class="rounded" placeholder="http://...">
         </p>
 
-        <p class="mb-2">
+        <p class="restaurant-spec-list">
           <span class="text-secondary">餐廳電話：</span>
-          <input type="text" name="phone" class="rounded" placeholder="phone">
+          <input type="text" name="phone" placeholder="phone">
         </p>
 
-        <p class="mb-2">
+        <p class="restaurant-spec-list">
           <span class="text-secondary">餐廳評價：</span>
-          <input type="text" name="rating" class="rounded" placeholder="rating" required>
+          <input type="text" name="rating" placeholder="rating" required>
         </p>
 
-        <p class="mb-2">
-          <textarea name="description" placeholder="填寫評論..." class="rounded" id="description" cols="70"
-            rows="5"></textarea>
+        <p class="restaurant-spec-list restaurant-spec-desc">
+          <textarea name="description" placeholder="填寫評論..." id="description" rows="5"></textarea>
         </p>
 
-        <p class="mb-4">
+        <p class="restaurant-spec-list">
           <span class="text-secondary">圖片：</span>
-          <input type="text" name="image" class="rounded" placeholder="http://...">
+          <input type="text" name="image" placeholder="http://...">
         </p>
 
-        <button type="submit" class="btn btn-light mb-5">Create new!</button>
-        <a href="/" class="btn btn-light mb-5">Back</a>
+        <button type="submit" class="btn btn-light mb-5 mt-4">Create new!</button>
+        <a href="/" class="btn btn-light mb-5 mt-4">Back</a>
     </div>
   </div>
 </div>

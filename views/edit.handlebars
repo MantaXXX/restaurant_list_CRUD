@@ -4,16 +4,12 @@
       <div class="col-12 col-md-10 mx-auto">
 
         <p class="mt-2 restaurant-spec-list">
-          <span class="text-secondary">
-            餐廳名稱：
-          </span>
+          <span class="text-secondary">餐廳名稱：</span>
           <input type="text" placeholder="name" name="name" value="{{ restaurant.name }}" required></input>
         </p>
 
         <p class="restaurant-spec-list">
-          <span class="text-secondary">
-            餐廳類別：
-          </span>
+          <span class="text-secondary">餐廳類別：</span>
           <input type="text" placeholder="Ex.西式料理" name="category" list="category" value="{{ restaurant.category }}"
             required>
           <datalist id="category">
@@ -31,30 +27,22 @@
         </p>
 
         <p class="restaurant-spec-list">
-          <span class="text-secondary">
-            餐廳地址：
-          </span>
+          <span class="text-secondary">餐廳地址：</span>
           <input type="text" name="location" value="{{ restaurant.location }}" required>
         </p>
 
         <p class="restaurant-spec-list restaurant-spec-maps">
-          <span class="text-secondary">
-            Google maps：
-          </span>
+          <span class="text-secondary">Google maps：</span>
           <input type="text" name="google_map" value="{{ restaurant.google_map }}">
         </p>
 
         <p class="restaurant-spec-list">
-          <span class="text-secondary">
-            餐廳電話：
-          </span>
+          <span class="text-secondary">餐廳電話：</span>
           <input type="text" value="{{ restaurant.phone }}" name="phone">
         </p>
 
         <p class="restaurant-spec-list">
-          <span class="text-secondary">
-            餐廳評價：
-          </span>
+          <span class="text-secondary">餐廳評價：</span>
           <input type="number" step="0.1" value="{{ restaurant.rating }}" name="rating" required>
         </p>
 
@@ -64,9 +52,7 @@
         </p>
 
         <p class="restaurant-spec-list">
-          <span class="text-secondary">
-            圖片：
-          </span>
+          <span class="text-secondary">圖片：</span>
           <input type="text" name="image" value="{{ restaurant.image }}">
         </p>
 
