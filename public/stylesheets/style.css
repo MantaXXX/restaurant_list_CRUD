@@ -91,7 +91,14 @@ header {
 }
 
 .restaurant-spec-maps input {
-  width: 144px;
+  border-radius: 0;
+  border: none;
+  border-style: solid;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom: 1px solid #878787;
+  border-left-width: 0px;
+  width: 100%;
 }
 
 @media screen and (max-width: 992px) {
